@@ -1,6 +1,5 @@
 var data = document.getElementById("data");
-var boton = document.getElementById("boton");
-document.getElementById("form1").addEventListener("submit",function(e){
+document.getElementById("boton").addEventListener("click",function(e){
       e.preventDefault();
       (function printAll(){
             var empleados = [
@@ -32,11 +31,11 @@ document.getElementById("form1").addEventListener("submit",function(e){
 
             data.innerHTML= "";
             empleados.forEach(function(element){
-            data.innerHTML += "<div><ul>" + 
-                                    "<li>" + "Nombre: " + element.nombre + "</li>"+
-                                    "<li>" + "Apellido: " + element.apellido + "</li>"+
-                                    "<li>" + "Rol: " + element.rol + "</li>"+
-                                    "<li>" + "Cumpleaños: " + element.cumpleanios + "</li>" + 
+            data.innerHTML += "<div class=\"person\"><ul>" + 
+                                    "<li>" + "<span>Nombre:</span> " + element.nombre + "</li>"+
+                                    "<li>" + "<span>Apellido:</span> " + element.apellido + "</li>"+
+                                    "<li>" + "<span>Rol:</span> " + element.rol + "</li>"+
+                                    "<li>" + "<span>Cumpleaños:</span> " + element.cumpleanios + "</li>" + 
                               "</ul></div>";
             });
       })();

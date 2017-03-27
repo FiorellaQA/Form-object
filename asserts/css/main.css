@@ -1,0 +1,108 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: helvetica;
+}
+body{
+	background-color: grey;
+}
+.header{
+	/*background-image: url('../img/header.jpg');*/
+	background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 29%, rgba(0, 0, 0, 0.65) 100%), url('../img/header.jpg') no-repeat;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 600px;
+}
+.header nav{
+	height: 100%;
+}
+.header ul{
+	display: flex;
+	list-style: none;
+	justify-content: flex-end;
+	background-color: rgba(0, 0, 0, 0.61);
+	height: 50px;
+}
+.header ul li{
+	padding-right: 40px;
+	line-height: 50px;
+}
+.header ul a{
+	color: #F3F3F3;
+	text-decoration: none;
+}
+.header ul a:hover{
+	color: #1ee2e7;
+}
+.bt_team{
+	color: #1ee2e7;
+	border-bottom: 2px solid #1ee2e7;
+}
+.header__content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	height: 100%;
+}
+.header__content .title, 
+.header__content .sub-title{
+	font-family: Arial,sans-serif;
+	color: white;
+	text-shadow: 2px 2px rgba(0,0,0,0.2);
+	width: 80%;
+	text-align: center;
+	font-style: none;
+}
+.header__content .title{
+	font-size: 80px;
+}
+.header__content .sub-title{
+	font-size: 50px;
+	font-style: italic;
+}
+.header__content button{
+	margin-top: 80px;
+	border-radius: 10px;
+	text-shadow: 1px 1px black;
+	border: 1px solid #027872;
+	background: #069B94;
+	color: white;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+.header__content button:hover{
+	background: #17d0d5;
+	border-color: #17d0d5;
+	transition: 500ms;
+}
+.people{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.person{
+	margin: 10px;
+	border: 1px solid #ccc;
+	background: #efefef;
+	padding: 20px;
+	border-radius: 3px;
+}
+.person li{
+	list-style: none;
+}
+.person:hover{
+	background: #ccc;
+	transition: 200ms;
+}
+.person li span{
+	font-weight: 600;
+}
+
+
